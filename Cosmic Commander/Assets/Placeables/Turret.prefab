@@ -92,6 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1723398489473148168}
   - component: {fileID: -2803351256176789826}
+  - component: {fileID: 1007502076523470821}
   m_Layer: 0
   m_Name: Turret
   m_TagString: Untagged
@@ -127,8 +128,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5aa65cf9a16ab449685bdca124b0ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  range: 15
+  laserParticles: {fileID: 7429883524776563164}
   weapon: {fileID: 9110307391893681021}
-  target: {fileID: 0}
+--- !u!114 &1007502076523470821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723398489473148169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9491b7feef267c04d9b502fd6cfab393, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cost: 1200
 --- !u!1 &5435502394556580936
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,7 +249,7 @@ ParticleSystem:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  moveWithTransform: 0
+  moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
   randomSeed: 0
